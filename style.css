@@ -2,6 +2,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 0.5rem;
 }
 
 .global-wrapper {
@@ -9,6 +16,10 @@ body {
   width: 100%;
 
   background-color: aqua;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .top-bar {
@@ -25,12 +36,43 @@ body {
 }
 
 .cams-container {
-  height: 1000px;
   width: 70%;
+  height: 80%;
 
   margin: 0 auto;
 
   background-color: chartreuse;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cam-perimeter {
+  height: calc(100% / 5);
+  width: calc(100% / 7);
+
+  background-color: brown;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cam {
+  height: 90%;
+  width: 90%;
+  background-color: blueviolet;
+  position: relative;
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .bottom-bar {
